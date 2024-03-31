@@ -4,3 +4,6 @@ PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python blox_examples/blox_new_flow
 
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python simulator_simple.py --cluster-job-log ./trace-data/cluster_job_log --sim-type trace-synthetic --jobs-per-hour 1 --exp-prefix test
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python las_scheduler.py --simulate --load 1 --exp-prefix test
+
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python simulator_runner/simulator.py --cluster-job-log ~/744/blox/trace-data/cluster_job_log --sim-type trace-synthetic --jobs-per-hour 1 --exp-prefix test
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python blox_examples/las_scheduler.py --simulate --load 1 --exp-prefix test

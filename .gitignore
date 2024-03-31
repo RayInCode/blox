@@ -12,3 +12,5 @@ __pycache__/
 trace-data/
 trace-data.tar.gz
 
+out/
+
