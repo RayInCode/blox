@@ -3,11 +3,13 @@ __pycache__/
 *$py.class
 *.swp
 *.swo
-.vscode/*
 
 *pb2*.py
 
 *.pickle
 
 note.txt
+
+trace_data/
+trace_data.tar.gz
 
