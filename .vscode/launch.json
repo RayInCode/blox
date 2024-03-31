@@ -1,0 +1,78 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: simulator.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/simulator_runner/simulator.py",
+            "env": {  // Set environment variables
+                "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python"
+            },
+            "args": [  // Arguments to pass to the script
+                "--cluster-job-log",
+                "${workspaceFolder}/cluster_job_log",
+                "--sim-type",
+                "trace-synthetic",
+                "--jobs-per-hour",
+                "1",
+                "--exp-prefix",
+                "test"
+            ]
+        },
+        {
+            "name": "Python Debugger: blox_new_flow_multi_run.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/blox_examples/blox_new_flow_multi_run.py",
+            "env": {  // Set environment variables
+                "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python"
+            },
+            "args": [  // Arguments to pass to the script
+                "--simulate",
+                "--load",
+                "6",
+                "--exp-prefix",
+                "test"
+            ]
+        },
+        {
+            "name": "Python Debugger: simulator_simple.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/simulator_simple.py",
+            "env": {  // Set environment variables
+                "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python"
+            },
+            "args": [  // Arguments to pass to the script
+                "--cluster-job-log",
+                "${workspaceFolder}/cluster_job_log",
+                "--sim-type",
+                "trace-synthetic",
+                "--jobs-per-hour",
+                "1",
+                "--exp-prefix",
+                "test"
+            ]
+        },
+        {
+            "name": "Python Debugger: las_scheduler.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/las_scheduler.py",
+            "env": {  // Set environment variables
+                "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python"
+            },
+            "args": [  // Arguments to pass to the script
+                "--simulate",
+                "--load",
+                "1",
+                "--exp-prefix",
+                "test"
+            ]
+        }
+    ]
+}
