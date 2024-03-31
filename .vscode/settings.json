@@ -1,0 +1,4 @@
+{
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.defaultInterpreterPath": "~/miniconda3/envs/blox/bin/python"
+}
