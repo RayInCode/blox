@@ -8,8 +8,6 @@ __pycache__/
 
 *.pickle
 
-note.txt
-
 trace_data/
 trace_data.tar.gz
 
