@@ -1,3 +1,6 @@
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python simulator_simple.py --cluster-job-log ./trace-data/cluster_job_log --sim-type trace-synthetic --jobs-per-hour 1 --exp-prefix test
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python las_scheduler.py --simulate --load 1 --exp-prefix test 
+
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python -u simulator_simple.py --cluster-job-log ./trace-data/cluster_job_log --sim-type trace-synthetic --jobs-per-hour 1 --exp-prefix test > out/simulator_simple_las/0331_1903_.sim.out
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python -u las_scheduler.py --simulate --load 1 --exp-prefix test > out/simulator_simple_las/0331_1903_rm.out
 
