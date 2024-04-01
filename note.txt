@@ -5,7 +5,7 @@ PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python -u simulator_simple.py --cl
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python -u las_scheduler.py --simulate --load 1 --exp-prefix test > out/simulator_simple_las/0331_1903_rm.out
 
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python simulator_runner/simulator.py --cluster-job-log ./trace-data/cluster_job_log --sim-type trace-synthetic --jobs-per-hour 1 --exp-prefix test
-PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python blox_examples/las_scheduler.py --simulate --load 1 --exp-prefix test
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python blox_examples/blox_new_flow_multi_run.py --simulate --load 1 --exp-prefix test
 
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python -u simulator_runner/simulator.py --cluster-job-log ./trace-data/cluster_job_log --sim-type trace-synthetic --jobs-per-hour 1 --exp-prefix test > ./out/simulator_blox_new_flow_multi_run/0331_1904_sim.out
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python python -u blox_examples/blox_new_flow_multi_run.py --simulate --load 1 --exp-prefix test > ./out/simulator_blox_new_flow_multi_run/0331_1904_rm.outgit
